@@ -1,9 +1,0 @@
-#Created by Topology-Converter v{{ version }}
-#    Template Revision: v4.7.0
-
-{% for device in devices %}{%   if device.function == "oob-switch" %}
-auto bridge-untagged
-iface bridge-untagged
-{% if device.mgmt_ip is defined %}    address {{ device.mgmt_ip }}{{ devices[0].mgmt_cidrmask }}{% endif %}
-    bridge-ports {% for link in device.interfaces -%}{% if "swp" in link.local_interface %}{{ link.local_interface }} {% endif %}{% endfor %}
-{%   endif %}{% endfor %}
