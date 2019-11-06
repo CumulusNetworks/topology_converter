@@ -1,8 +1,0 @@
-graph dc1 {
- "leaf1" [function="leaf" config="./helper_scripts/extra_switch_config.sh"]
- "leaf2" [function="leaf" config="./helper_scripts/extra_switch_config.sh"]
-   "leaf1":"swp1" -- "leaf2":"swp1"
-   "leaf1":"swp2" -- "leaf2":"swp2"
-   "leaf1":"swp3" -- "leaf2":"swp3"
-   "leaf1":"swp4" -- "leaf2":"swp4"
-}

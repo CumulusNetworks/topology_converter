@@ -1,8 +1,0 @@
-graph dc1 {
- "leaf1" [function="leaf" config="./helper_scripts/extra_switch_config.sh" tunnel_ip="192.168.1.1"]
- "leaf2" [function="leaf" config="./helper_scripts/extra_switch_config.sh" tunnel_ip="192.168.1.2"]
-   "leaf1":"swp11" -- "leaf2":"swp1" [ left_mac="44:38:39:1e:af:11", right_mac="44:38:39:1e:af:21"]
-   "leaf1":"swp2" -- "leaf2":"swp2" [ left_mac="44:38:39:1e:af:12", right_mac="44:38:39:1e:af:22"]
-   "leaf1":"swp33" -- "leaf2":"swp3" [ left_mac="44:38:39:1e:af:13", right_mac="44:38:39:1e:af:23"]
-   "leaf1":"swp4" -- "leaf2":"swp4" [ left_mac="44:38:39:1e:af:14", right_mac="44:38:39:1e:af:24"]
-}

@@ -1,8 +1,0 @@
-graph dc1 {
- "leaf1" [function="leaf" config="./helper_scripts/extra_switch_config.sh"]
- "coreos" [memory="512" os="https://alpha.release.core-os.net/amd64-usr/1192.0.0/coreos_production_vagrant.box" remap=False]
-   "leaf1":"swp1" -- "coreos":"eth1"
-   "leaf1":"swp2" -- "coreos":"eth2"
-   "leaf1":"swp3" -- "coreos":"eth3"
-   "leaf1":"swp4" -- "coreos":"eth4"
-}
